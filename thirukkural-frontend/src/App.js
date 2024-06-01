@@ -21,8 +21,10 @@ function App() {
         {kural ? (
           <div>
             <h2>Couplet {kural.number}</h2>
-            <p>{kural.couplet}</p>
-            <p><em>{kural.meaning}</em></p>
+            <p>{kural.couplet_tamil}</p>
+            <p><em>{kural.meaning_tamil}</em></p>
+            <p>{kural.couplet_en}</p>
+            <p><em>{kural.meaning_en}</em></p>
           </div>
         ) : (
           <p>Loading...</p>
