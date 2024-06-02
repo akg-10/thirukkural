@@ -35,8 +35,8 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <header className="mb-4">
         <div>
         <button onClick={toggleLang}>{lang.en ? "தமிழ்" : "English"}</button>
         </div>
@@ -44,13 +44,13 @@ function App() {
         {kural ? (
           <div>
             {lang.en ? (
-            <div>
+            <div className="bg-white p-8 rounded shadow-md w-full max-w-lg">
             <h2>Couplet: {kural.number}</h2>
             <p>{kural.couplet_en}</p>
             <p><em>{kural.meaning_en}</em></p>
             </div>
             ) : (
-            <div>
+            <div className="bg-white p-8 rounded shadow-md w-full max-w-lg">
             <h2>குறள்: {kural.number}</h2>
             <p>{kural.couplet_tamil}</p>
             <p><em>{kural.meaning_tamil}</em></p>
