@@ -4,7 +4,8 @@ from django.db import models
 
 class Thirukkural(models.Model):
     number = models.IntegerField(unique=True)
-    couplet_tamil = models.TextField()
+    couplet_tamil1 = models.TextField()
+    couplet_tamil2 = models.TextField()
     meaning_tamil = models.TextField()
     couplet_en = models.TextField()
     meaning_en = models.TextField()
