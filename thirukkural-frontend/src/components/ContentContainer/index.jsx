@@ -45,14 +45,23 @@ const [lang, setLang] = useState(
           <div className="main-content">
             {lang.en ? (
             <div className="kural-content">
+            <h2>Section: {kural.section_en}</h2>
+            <h2>Chapter:{kural.chapter_en}</h2>
             <h2>Couplet: {kural.number}</h2>
             <p className='kural'>{kural.couplet_en}</p>
+            <p>Meaning:</p>
             <p><em>{kural.meaning_en}</em></p>
             </div>
             ) : (
             <div className="kural-content">
+            <h2>பால்: {kural.section}</h2>
+            <h2>அதிகாரம்:{kural.chapter}</h2>
             <h2>குறள்: {kural.number}</h2>
-            <p className='kural'>{kural.couplet_tamil}</p>
+            <div className='kural'>
+            <p>{kural.couplet_tamil1}</p>
+            <p>{kural.couplet_tamil2}</p>
+            </div>
+            <p>பொருள்:</p>
             <p><em>{kural.meaning_tamil}</em></p>
             </div>
             )} 
