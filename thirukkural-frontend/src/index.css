@@ -1,17 +1,64 @@
+@import-normalize;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .sidebar-icon {
+    @apply relative flex items-center justify-center 
+    h-9 w-9 mt-2 mb-2 mx-auto  
+   hover:bg-blue-600 bg-blend-color-burn bg-slate-300
+  text-black hover:text-white
+    hover:rounded-xl rounded-3xl
+    transition-all duration-300 ease-linear
+    cursor-pointer drop-shadow-2xl  ;
+  }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max bottom-10 rounded-md shadow-md
+    text-white bg-black 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-bottom;
+  }
+
+  .page{
+    @apply grow-0 text-black font-extrabold;
+  }
+
+  .heading{
+    @apply text-center
+    h-10 w-screen 
+    mt-5 ml-0 px-5 pt-5;
+  }
+
+  .toggle{
+    @apply text-end
+    h-10 w-full top-0
+    ml-0 mt-5 pt-5 pb-0 px-5;
+  }
+
+
+  .main-content{
+    @apply flex items-center justify-center
+    h-1/6 w-full
+    mt-2 mb-2 mx-2 px-10;
+  }
+
+
+  .kural-content{
+    @apply min-h-80 min-w-10 flex flex-col items-center justify-center
+    h-52 w-full 
+    mt-0 ml-0 px-0 pb-0;
+  }
+
+  .kural{
+    @apply mx-10 shadow-xl
+    h-24 w-96 whitespace-normal mt-4 mb-8 pt-5 pb-5 px-5 bg-blue-500
+    backdrop-blur-2xl
+    rounded-3xl
+    drop-shadow-md
+    overflow-auto;
+  }
+
 }
