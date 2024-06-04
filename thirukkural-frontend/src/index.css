@@ -54,7 +54,7 @@
 
   .kural{
     @apply mx-10 shadow-xl text-black text-left justify-center
-    h-24 w-96 mt-4 mb-8 pt-5 pb-5 px-5 bg-gradient-to-r from-sky-400 to-sky-600
+    h-24 w-96 mt-4 mb-8 pt-5 pb-5 px-3 bg-gradient-to-r from-sky-400 to-sky-600
     backdrop-filter backdrop-blur-sm
     rounded-3xl bg-blend-color-burn
     drop-shadow-md;
