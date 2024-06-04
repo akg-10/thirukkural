@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function ContentContainter(){
+const apiUrl = process.env.REACT_APP_API_URL;
 const [kural, setKural] = useState(null);
 const [lang, setLang] = useState(
     {
@@ -23,16 +24,16 @@ const [lang, setLang] = useState(
     }
     
   }
-
   useEffect(() => {
-    axios.get('http://akg10.pythonanywhere.com/api/random-kural/')
+    
+    axios.get(`${apiUrl}/api/random-kural/`)
       .then(response => {
         setKural(response.data);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
       });
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div className='page'>
