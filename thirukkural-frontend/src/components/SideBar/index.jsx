@@ -1,6 +1,6 @@
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGithub, FaTwitter } from "react-icons/fa";
-import { IoLogoInstagram } from "react-icons/io";
+import { IoIosMail } from "react-icons/io";
 
 const SideBar = () => {
   return (
@@ -8,7 +8,7 @@ const SideBar = () => {
                     
         <SideBarIcon link='https://www.linkedin.com/in/gokul-a-k/'text="My Linkedin profile" icon={<TiSocialLinkedin size="28" />} />
         <SideBarIcon link='https://github.com/akg-10' text="Checkout my Github" icon={<FaGithub size="20" />} />
-        <SideBarIcon link='https://www.instagram.com/_me._.gokul._.10_/'text="My Insta profile" icon={<IoLogoInstagram size="20" />} />
+        <SideBarIcon link='mailto:akgv2002@gmail.com'text="Mail me" icon={<IoIosMail size="20" />} />
         <SideBarIcon link='https://x.com/_akg10' text="My Twitter profile"icon={<FaTwitter size="20" />} />
         
     </div>

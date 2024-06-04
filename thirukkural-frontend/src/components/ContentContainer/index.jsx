@@ -25,7 +25,7 @@ const [lang, setLang] = useState(
   }
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/random-kural/')
+    axios.get('http://akg10.pythonanywhere.com/api/random-kural/')
       .then(response => {
         setKural(response.data);
       })
@@ -38,7 +38,11 @@ const [lang, setLang] = useState(
     <div className='page'>
       <header>
         <div className='toggle'>
-        <button onClick={toggleLang}>{lang.en ? "தமிழ்" : "English"}</button>
+        <button className='hover:bg-blue-600 bg-blend-color-burn bg-slate-300
+  text-black hover:text-white
+    hover:rounded-xl rounded-3xl
+    transition-all duration-300 ease-linear
+    cursor-pointer drop-shadow-2xl  px:0 hover:px-5 origin-left' onClick={toggleLang}>{lang.en ? "தமிழ்" : "English"}</button>
         </div>
         <h1 className='heading'>{lang.en ? "Thirukkural of the Day" : "இன்றைய திருக்குறள்"}</h1>
         {kural ? (
