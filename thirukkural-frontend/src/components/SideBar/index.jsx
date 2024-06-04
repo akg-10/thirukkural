@@ -4,7 +4,7 @@ import { IoIosMail } from "react-icons/io";
 
 const SideBar = () => {
   return (
-    <div className="relative grow-0 inset-x-0 bottom-0 w-full h-20 flex flex-row justify-center items-center pb-5">
+    <div className="relative grow-0 inset-x-0 bottom-0 w-full h-20 flex flex-row justify-center items-center pb-5 pt-5 mb-5 mt-5">
                     
         <SideBarIcon link='https://www.linkedin.com/in/gokul-a-k/'text="My Linkedin profile" icon={<TiSocialLinkedin size="28" />} />
         <SideBarIcon link='https://github.com/akg-10' text="Checkout my Github" icon={<FaGithub size="20" />} />

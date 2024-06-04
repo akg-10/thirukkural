@@ -45,7 +45,9 @@ const [lang, setLang] = useState(
     transition-all duration-300 ease-linear
     cursor-pointer drop-shadow-2xl  px:0 hover:px-5 origin-left' onClick={toggleLang}>{lang.en ? "தமிழ்" : "English"}</button>
         </div>
-        <h1 className='heading'>{lang.en ? "Thirukkural of the Day" : "இன்றைய திருக்குறள்"}</h1>
+        <div className='heading'>
+        <h1>{lang.en ? "Thirukkural of the Day" : "இன்றைய திருக்குறள்"}</h1>
+        </div>
         {kural ? (
           <div className="main-content">
             {lang.en ? (

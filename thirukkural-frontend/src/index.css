@@ -28,8 +28,8 @@
 
   .heading{
     @apply text-center text-2xl
-    h-10 w-full 
-    mt-5 ml-0 px-5 pt-5;
+    h-20 w-auto 
+    mt-5 mb-5 mx-5 px-5 pt-5 pb-5;
   }
 
   .toggle{
