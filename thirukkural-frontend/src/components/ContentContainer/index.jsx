@@ -39,8 +39,8 @@ const [lang, setLang] = useState(
     <div className='page'>
       <header>
         <div className='toggle'>
-        <button className='hover:bg-blue-600 bg-blend-color-burn bg-slate-300
-  text-black hover:text-white
+        <button className='hover:bg-gradient-to-r from-sky-500 to-sky-600 bg-blend-color-burn bg-inherit
+  text-black hover:shadow-2xl hover:text-white
     hover:rounded-xl rounded-3xl
     transition-all duration-300 ease-linear
     cursor-pointer drop-shadow-2xl  px:0 hover:px-5 origin-left' onClick={toggleLang}>{lang.en ? "தமிழ்" : "English"}</button>

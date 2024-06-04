@@ -8,11 +8,11 @@
   .sidebar-icon {
     @apply relative flex items-center justify-center 
     h-9 w-9 mt-2 mb-2 mx-auto  
-   hover:bg-blue-600 bg-blend-color-burn bg-slate-300
+   hover:bg-gradient-to-r from-sky-500 to-sky-800 bg-blend-color-burn bg-slate-300
   text-black hover:text-white
     hover:rounded-xl rounded-3xl
     transition-all duration-300 ease-linear
-    cursor-pointer drop-shadow-2xl  ;
+    cursor-pointer drop-shadow-2xl  backdrop-filter backdrop-blur-sm;
   }
 
   .sidebar-tooltip {
@@ -23,7 +23,7 @@
   }
 
   .page{
-    @apply grow-0 text-black font-extrabold;
+    @apply grow-0 text-black font-extrabold ;
   }
 
   .heading{
@@ -54,8 +54,8 @@
 
   .kural{
     @apply mx-10 shadow-xl text-black text-left justify-center
-    h-24 w-96 mt-4 mb-8 pt-5 pb-5 px-5 bg-blue-500
-    backdrop-blur-2xl
+    h-24 w-96 mt-4 mb-8 pt-5 pb-5 px-5 bg-gradient-to-r from-sky-400 to-sky-600
+    backdrop-filter backdrop-blur-sm
     rounded-3xl bg-blend-color-burn
     drop-shadow-md;
   }
